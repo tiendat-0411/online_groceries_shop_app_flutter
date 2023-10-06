@@ -1,11 +1,12 @@
+// ignore_for_file: unused_local_variable, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_groceries/view/explore/search_view.dart';
+import 'package:online_groceries/view/main_tabview/list_find.dart';
 
 import '../../common/color_extension.dart';
-import '../../common_widget/explore_cell.dart';
 import '../../view_model/explore_view_model.dart';
-import 'explore_detail_view.dart';
 
 class ExploreView extends StatefulWidget {
   const ExploreView({super.key});
@@ -88,35 +89,36 @@ class _ExploreViewState extends State<ExploreView> {
           const SizedBox(
             height: 15,
           ),
-          Expanded(
-            child: Obx(
-              () => GridView.builder(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 0.95,
-                    crossAxisSpacing: 15,
-                    mainAxisSpacing: 15),
-                itemCount: exploreVM.listArr.length,
-                itemBuilder: ((context, index) {
-                  var eObj = exploreVM.listArr[index];
-                  return ExploreCell(
-                    pObj: eObj,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => ExploreDetailView(
-                                  eObj: eObj,
-                                )),
-                      );
-                    },
-                  );
-                }),
-              ),
-            ),
-          )
+          Expanded(child: ListFind())
+          // Expanded(
+          //   child: Obx(
+          //     () => GridView.builder(
+          //       padding:
+          //           const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
+          //       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          //           crossAxisCount: 2,
+          //           childAspectRatio: 0.95,
+          //           crossAxisSpacing: 15,
+          //           mainAxisSpacing: 15),
+          //       itemCount: exploreVM.listArr.length,
+          //       itemBuilder: ((context, index) {
+          //         var eObj = exploreVM.listArr[index];
+          //         return ExploreCell(
+          //           pObj: eObj,
+          //           onPressed: () {
+          //             Navigator.push(
+          //               context,
+          //               MaterialPageRoute(
+          //                   builder: (context) => ExploreDetailView(
+          //                         eObj: eObj,
+          //                       )),
+          //             );
+          //           },
+          //         );
+          //       }),
+          //     ),
+          //   ),
+          // )
         ],
       ),
     );

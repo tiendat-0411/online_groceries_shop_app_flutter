@@ -17,7 +17,7 @@ class HomeViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    // 
     super.onInit();
 
     if (kDebugMode) {
@@ -27,8 +27,6 @@ class HomeViewModel extends GetxController {
     serviceCallHome();
    
   }
-
-  //ServiceCall
   void serviceCallHome() {
 
     Globs.showHUD();

@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_this
+
 class PromoCodeModel {
   int? promoCodeId;
   String? code;
@@ -42,7 +44,7 @@ class PromoCodeModel {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
+    final Map<String, dynamic> data =  Map<String, dynamic>();
     data['promo_code_id'] = this.promoCodeId;
     data['code'] = this.code;
     data['title'] = this.title;

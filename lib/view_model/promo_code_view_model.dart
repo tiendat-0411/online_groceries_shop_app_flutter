@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:online_groceries/common/globs.dart';
 import 'package:online_groceries/common/service_call.dart';
+
 import '../model/promo_code_model.dart';
 
 class PromoCodeViewModel extends GetxController {
@@ -9,7 +10,7 @@ class PromoCodeViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     if (kDebugMode) {

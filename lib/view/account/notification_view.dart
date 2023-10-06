@@ -19,7 +19,7 @@ class _NotificationListViewState extends State<NotificationListView> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+
     Get.delete<NotificationViewModel>();
     super.dispose();
   }

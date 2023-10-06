@@ -1,4 +1,4 @@
-import 'package:fl_country_code_picker/fl_country_code_picker.dart';
+
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -20,7 +20,6 @@ class MyDetailViewModel extends GetxController {
   final isLoading = false.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
 
     if (kDebugMode) {
@@ -29,8 +28,6 @@ class MyDetailViewModel extends GetxController {
 
     setDataModel();
   }
-
-  //ServiceCall
 
   void serviceCallUpdate(VoidCallback didDone) {
     if (txtName.value.text.isEmpty) {

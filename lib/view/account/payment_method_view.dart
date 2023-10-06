@@ -20,7 +20,7 @@ class _PaymentMethodListViewState extends State<PaymentMethodListView> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+
     Get.delete<PaymentViewModel>();
     super.dispose();
   }

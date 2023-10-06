@@ -51,7 +51,7 @@ class _AccountViewState extends State<AccountView> {
                       Row(
                         children: [
                           Text(
-                            "Code For Any",
+                            "Nguyen Tien Dat",
                             style: TextStyle(
                                 color: TColor.primaryText,
                                 fontSize: 20,
@@ -68,7 +68,7 @@ class _AccountViewState extends State<AccountView> {
                         ],
                       ),
                       Text(
-                        "codeforany@gmail.com",
+                        "ngtiendat0411@gmail.com",
                         style: TextStyle(
                             color: TColor.secondaryText, fontSize: 16),
                       )

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:online_groceries/view/login/select_location_view.dart';
 
 import '../../common/color_extension.dart';
 import '../../common_widget/line_textfield.dart';

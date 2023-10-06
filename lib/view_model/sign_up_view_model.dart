@@ -15,7 +15,7 @@ class SignUpViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     if (kDebugMode) {
@@ -26,7 +26,7 @@ class SignUpViewModel extends GetxController {
     txtPassword.value.text = "123456";
   }
 
-  //ServiceCall
+
   void serviceCallSignUp() {
 
     if(txtUsername.value.text.isEmpty) {

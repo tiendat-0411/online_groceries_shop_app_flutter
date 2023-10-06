@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_groceries/common/globs.dart';
 import 'package:online_groceries/common/service_call.dart';
-import 'package:online_groceries/view/main_tabview/main_tabview.dart';
 import 'package:online_groceries/view_model/splash_view_model.dart';
 
 class LoginViewModel extends GetxController {
@@ -15,7 +14,7 @@ class LoginViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
 
     if (kDebugMode) {
@@ -24,8 +23,6 @@ class LoginViewModel extends GetxController {
     txtEmail.value.text = "test@gmail.com";
     txtPassword.value.text = "123456";
   }
-
-  //ServiceCall
   void serviceCallLogin() {
 
      if (!GetUtils.isEmail(txtEmail.value.text)) {

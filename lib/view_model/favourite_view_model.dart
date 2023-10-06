@@ -11,7 +11,7 @@ class FavoriteViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
 
     if (kDebugMode) {
@@ -20,8 +20,6 @@ class FavoriteViewModel extends GetxController {
 
     serviceCalList();
   }
-
-  //ServiceCall
   void serviceCalList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svFavorite, isToken: true,

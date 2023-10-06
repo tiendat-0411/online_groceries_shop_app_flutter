@@ -13,7 +13,7 @@ class ExploreViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
 
     if (kDebugMode) {
@@ -22,8 +22,6 @@ class ExploreViewModel extends GetxController {
 
     serviceCallList();
   }
-
-  //ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svExploreList, isToken: true,

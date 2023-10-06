@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
+
 import '../common/globs.dart';
 import '../common/service_call.dart';
 import '../model/notification_model.dart';
@@ -12,7 +13,7 @@ class NotificationViewModel extends GetxController {
   final isLoading = false.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     if (kDebugMode) {
@@ -22,7 +23,6 @@ class NotificationViewModel extends GetxController {
     serviceCallList();
   }
 
-  //ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svNotificationList, isToken: true,
@@ -60,6 +60,4 @@ class NotificationViewModel extends GetxController {
       Get.snackbar(Globs.appName, err.toString());
     });
   }
-
- 
 }

@@ -1,9 +1,11 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:fl_country_code_picker/fl_country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:online_groceries/view/login/login_view.dart';
 import 'package:online_groceries/view/login/sign_up_view.dart';
 import 'package:online_groceries/view/login/verification_view.dart';
+import 'package:online_groceries/view/main_tabview/SignIn.dart';
 
 import '../../common/color_extension.dart';
 import '../../common_widget/round_button.dart';
@@ -141,7 +143,7 @@ class _SignInViewState extends State<SignInView> {
                     title: "Sign In With Email",
                     bgColor: const Color(0xff5383EC),
                     onPressed: () {
-                      Get.to( () => const LogInView()  );
+                      Get.to(() => const SigninScreen());
                     },
                   ),
                 ),
@@ -153,7 +155,7 @@ class _SignInViewState extends State<SignInView> {
                   child: RoundButton(
                     title: "Sign Up With Email",
                     onPressed: () {
-                      Get.to(() =>  const SignUpView());
+                      Get.to(() => const SignUpView());
                     },
                   ),
                 ),

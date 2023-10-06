@@ -31,7 +31,7 @@ class _MyDetailViewState extends State<MyDetailView> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    
     Get.delete<MyDetailViewModel>();
     super.dispose();
   }

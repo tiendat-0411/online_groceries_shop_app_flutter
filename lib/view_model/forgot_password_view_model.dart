@@ -18,7 +18,7 @@ class ForgotPasswordViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+    //
     super.onInit();
 
     if (kDebugMode) {
@@ -26,8 +26,6 @@ class ForgotPasswordViewModel extends GetxController {
     }
     txtEmail.value.text = "test@gmail.com";
   }
-
-  //ServiceCall
   void serviceCallRequest({ bool isResend = false}) {
     if (!GetUtils.isEmail(txtEmail.value.text)) {
       Get.snackbar(Globs.appName, "Pleaser enter valid email address");

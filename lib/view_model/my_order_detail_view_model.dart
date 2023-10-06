@@ -17,13 +17,11 @@ class MyOrderDetailViewModel extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+   
 
     super.onInit();
     serviceCallDetail();
   }
-
-  //MARK ServiceCall
   void serviceCallDetail() {
     Globs.showHUD();
     ServiceCall.post({

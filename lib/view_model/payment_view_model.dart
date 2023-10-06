@@ -17,7 +17,7 @@ class PaymentViewModel extends GetxController {
   final isLoading = false.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
+  
     super.onInit();
 
     if (kDebugMode) {
@@ -27,7 +27,6 @@ class PaymentViewModel extends GetxController {
     serviceCallList();
   }
 
-  //ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svPaymentMethodList, isToken: true,
@@ -47,8 +46,6 @@ class PaymentViewModel extends GetxController {
       Get.snackbar(Globs.appName, err.toString());
     });
   }
-
-  
 
   void serviceCallRemove(PaymentModel pObj) {
     Globs.showHUD();

@@ -15,14 +15,12 @@ class ExploreItemViewMode extends GetxController {
 
   @override
   void onInit() {
-    // TODO: implement onInit
+
 
     super.onInit();
 
     serviceCallList();
   }
-
-  //MARK ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({

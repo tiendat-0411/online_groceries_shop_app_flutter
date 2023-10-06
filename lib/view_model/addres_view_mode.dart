@@ -20,7 +20,7 @@ class AddressViewModel extends GetxController {
   final isLoading = false.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     if (kDebugMode) {
@@ -29,8 +29,6 @@ class AddressViewModel extends GetxController {
 
     serviceCallList();
   }
-
-  //ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svDeliveryAddress, isToken: true,

@@ -19,7 +19,7 @@ class _PromoCodeViewState extends State<PromoCodeView> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+
     Get.delete<PromoCodeViewModel>();
     super.dispose();
   }

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:online_groceries/view/login/sign_up_view.dart';
+import 'package:online_groceries/view/main_tabview/main_tabview.dart';
 import 'package:online_groceries/view_model/login_view_model.dart';
+
 import '../../common/color_extension.dart';
 import '../../common_widget/line_textfield.dart';
 import '../../common_widget/round_button.dart';
@@ -130,11 +132,11 @@ class _LogInViewState extends State<LogInView> {
                   RoundButton(
                     title: "Log In",
                     onPressed: () {
-                      loginVM.serviceCallLogin();
-                      // Navigator.push(
-                      //     context,
-                      //     MaterialPageRoute(
-                      //         builder: (context) => const MainTabView()));
+                     
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const MainTabView()));
                     },
                   ),
                   SizedBox(

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "940813191017",
+    "project_id": "shoppingcart-4abce",
+    "storage_bucket": "shoppingcart-4abce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940813191017:android:50765b185b794705479ff8",
+        "android_client_info": {
+          "package_name": "com.codeforany.online_groceries"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBJGsL4B6PwEtdPBdMYK2Qo8PPs2AnZqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

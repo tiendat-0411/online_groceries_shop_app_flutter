@@ -12,7 +12,7 @@ class MyOrdersViewModel extends GetxController {
   final isLoading = false.obs;
   @override
   void onInit() {
-    // TODO: implement onInit
+   
     super.onInit();
 
     if (kDebugMode) {
@@ -21,8 +21,6 @@ class MyOrdersViewModel extends GetxController {
 
     serviceCallList();
   }
-
-  //ServiceCall
   void serviceCallList() {
     Globs.showHUD();
     ServiceCall.post({}, SVKey.svMyOrders, isToken: true,
